@@ -42,7 +42,7 @@ terraform {
   required_providers {
     google = {
       source = "hashicorp/google"
-      version = "3.55.0"
+      version = "3.83.0"
     }
   }
 }
@@ -73,7 +73,7 @@ resource "google_compute_instance" "tf-instance-1" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -94,7 +94,7 @@ resource "google_compute_instance" "tf-instance-2" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -153,7 +153,7 @@ terraform {
   required_providers {
     google = {
       source = "hashicorp/google"
-      version = "3.55.0"
+      version = "3.83.0"
     }
   }
 }
@@ -173,7 +173,7 @@ resource "google_compute_instance" "tf-instance-1" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -190,7 +190,7 @@ resource "google_compute_instance" "tf-instance-2" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -207,7 +207,7 @@ resource "google_compute_instance" "<FILL IN INSTANCE 3 NAME>" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -241,7 +241,7 @@ resource "google_compute_instance" "<FILL IN INSTANCE 3 NAME>" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -257,7 +257,7 @@ terraform apply
 <br/> **TASK 5: Use a module from the Registry** <br/>
 Copy and paste the following to the end of _main.tf_ file, fill in _Version Number_ and _Network Name_ instructed in the challenge:
 ```
-module "vpc" {
+module "network" {
     source  = "terraform-google-modules/network/google"
     version = "~> <FILL IN VERSION NUMBER>"
 
@@ -297,7 +297,7 @@ resource "google_compute_instance" "tf-instance-1" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
@@ -315,7 +315,7 @@ resource "google_compute_instance" "tf-instance-2" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 
